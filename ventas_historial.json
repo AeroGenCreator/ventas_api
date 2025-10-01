@@ -1,0 +1,86 @@
+{
+    "Folio": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "Fecha": [
+        "2025-09-23",
+        "2025-09-23",
+        "2025-09-23",
+        "2025-09-23"
+    ],
+    "Codigo": [
+        2593,
+        2592,
+        4165,
+        2591
+    ],
+    "Producto": [
+        "ABRAZADERA BRONCE 1 1/2\"",
+        "ABRAZADERA BRONCE 2\"",
+        "ABRAZADERA BRONCE 6\" X 1/2",
+        "ABRAZADERA FOFO DE 3”"
+    ],
+    "Cantidad": [
+        1,
+        2,
+        1,
+        2
+    ],
+    "Categoría 1": [
+        "URREA",
+        "URREA",
+        "RUGO",
+        "SIN MARCA"
+    ],
+    "Categoría 2": [
+        "BRONCE",
+        "BRONCE",
+        "BRONCE",
+        "FOFO"
+    ],
+    "Unidad": [
+        "Pieza",
+        "Pieza",
+        "Pieza",
+        "Pieza"
+    ],
+    "Precio Compra": [
+        1,
+        1,
+        1,
+        1
+    ],
+    "Porcentaje Ganancia": [
+        107.18,
+        283.91,
+        774.86208,
+        305.034
+    ],
+    "Precio Lista": [
+        108.18,
+        284.91,
+        775.86208,
+        306.034
+    ],
+    "Total": [
+        108.18,
+        569.82,
+        775.86,
+        612.06
+    ],
+    "Clave": [
+        "ABRUR038",
+        "ABRUR050",
+        "ABRUR150",
+        "ABRFO075"
+    ],
+    "Oficial": [
+        true,
+        true,
+        true,
+        true
+    ]
+}
