@@ -303,7 +303,8 @@ def por_facturar():
                     union['Claves'] = union['Clave']
 
                     union['redondeo'] = union['Unidades']
-                    productos_en_cotizacion += union['redondeo'].apply(lambda x: math.floor(x)).sum()
+                    union['redondeo'] = union['redondeo'].apply(lambda x: math.floor(x))
+                    productos_en_cotizacion += union['redondeo'].apply(lambda x: 1 if x == 0 else x).sum()
                     union = union.reindex(columns=['Unidades','Medida','Producto','Total','Existencias','Claves'])
 
                     cotizacion_total += union['Total'].sum()
@@ -327,7 +328,7 @@ def por_facturar():
                     mime="application/pdf",
                     width='stretch'
                 )
-                """# Mensaje de limpiar tabla
+                # Mensaje de limpiar tabla
                 st.info(l.phrase[26])
                 # Aumentamos en 1 el contador de: Numero de Folio
                 FOLIO_FACTURA += 1
@@ -342,7 +343,7 @@ def por_facturar():
                         st.warning(f'1. No se encuentra o se altero el archivo {RUTA_CONFIG}. Pedir ayuda con el soporte')
                 except (FileNotFoundError,FileExistsError,json.JSONDecodeError):
                     st.warning(f'2. No se encuentra o se altero el archivo <{RUTA_CONFIG}> Pedir ayuda con el soporte')
-                return"""
+                return
             
             if send_email:
                 pdf_bytes_email = generar_factura_pdf(nombre_factura,FOLIO_FACTURA,DESCUENTO_PORCENTAJE)
